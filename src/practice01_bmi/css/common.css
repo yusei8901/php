@@ -1,0 +1,11 @@
+.header {
+    background: green;
+    padding: 5px 20px;
+}
+.header-logo__link {
+    text-decoration: none;
+}
+h1 {
+    font-size: 36px;
+    color: white;
+}

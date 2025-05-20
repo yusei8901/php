@@ -1,0 +1,38 @@
+.form-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.form-message {
+    font-size: 24px;
+    text-align: center;
+}
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.form-box {
+    margin-bottom: 30px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-text {
+    font-size: 20px;
+}
+.form-input {
+    height: 30px;
+    width: 200px;
+}
+.form-button {
+    margin: 0 auto;
+    display: block;
+    font-size: 18px;
+    padding: 5px 30px;
+    margin: 0 auto;
+}
+.form-button:hover {
+    cursor: pointer;
+}
