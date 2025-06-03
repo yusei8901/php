@@ -21,18 +21,24 @@ $appropriateWeight = round(($height / 100) * ($height / 100) * 22, 2);
         </a>
     </header>
     <main class="result-wrapper">
-        <h2>あなたの記録</h2>
+        <h2>あなたの入力内容</h2>
         <p>身長：<?php echo $height ?>(cm)</p>
         <p>体重：<?php echo $weight ?>(kg)</p>
         <h3>診断結果</h3>
         <p>あなたのBMIは<?php echo $result ?>です。</p>
         <p>肥満度は
             <?php if($result < 18.5): ?>
-                低体重です。
+                <span class="font-bold">低体重</span>です。
             <?php elseif(18.5 <= $result && $result < 25): ?>
-                普通体重です。
+                <span class="font-bold">普通体重</span>です。
+            <?php elseif(25 <= $result && $result < 30): ?>
+                <span class="font-bold">肥満１度</span>です。
+            <?php elseif(30 <= $result && $result < 35): ?>
+                <span class="font-bold">肥満２度</span>です。
+            <?php elseif(35 <= $result && $result < 40): ?>
+                <span class="font-bold">肥満３度</span>です。
             <?php else: ?>
-                肥満です。
+                <span class="font-bold">肥満４度</span>です。
             <?php endif; ?>
         </p>
         <p>適正体重は<?php echo $appropriateWeight; ?>(kg)です。</p>
