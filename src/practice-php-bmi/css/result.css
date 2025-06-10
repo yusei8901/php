@@ -1,9 +1,62 @@
+h2 {
+    font-size: 36px;
+    text-decoration: underline;
+}
+
 .result-wrapper {
+    padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
 
-p .font-bold {
+.result-wrapper__result-contents-center {
+    padding: 20px;
+    border: 1px dotted black;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.result-wrapper__result-contents-left {
+    width: 50%;
+}
+.result-wrapper__result-contents-right {
+    width: 50%;
+}
+.input-wrapper {
+    padding: 20px;
+    border: 1px dotted black;
+}
+.result-wrapper__input-contents, .result-wrapper__result-contents {
+    margin-bottom: 60px;
+}
+
+.input-content, .result-content, .result-wrapper__advice-contents {
+    font-size: 24px;
+}
+.font-bold {
     font-weight: bold;
+}
+.result-wrapper__advice {
+    margin-bottom: 50px;
+}
+.result-wrapper__advice-contents {
+    border: 1px dotted black;
+    padding: 20px 40px;
+    text-align: left;
+}
+.btn-box {
+    padding: 40px;
+}
+.btn {
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    background-color: green;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    cursor: pointer;
 }

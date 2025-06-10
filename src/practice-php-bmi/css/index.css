@@ -16,15 +16,21 @@
     margin-bottom: 30px;
     max-width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
+
 .form-text {
     font-size: 20px;
 }
 .form-input {
     height: 30px;
-    width: 200px;
+    width: 70%;
+}
+.form-input-sex {
+    font-size: 16px;
+    height: 30px;
+    width: 70%;
 }
 .form-button {
     margin: 0 auto;

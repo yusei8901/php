@@ -66,11 +66,12 @@ echo "<br>";
 
 // 平均値を出す関数
 function getAverage () {
-    $gotAverage = $GLOBALS['total'] / $GLOBALS['array_size'];
-    return $gotAverage;
+    $average = $GLOBALS['total'] / $GLOBALS['array_size'];
+    round($average, 1);
+    return $average;
 }
-$average = round(getAverage(), 1);
-echo "平均値：". $average. "点";
+// $average = getAverage();
+echo "平均値：". getAverage(). "点";
 echo "<br>";
 
 echo "ーーーーーーーーーー";
@@ -100,8 +101,8 @@ function getVariance() {
     foreach($GLOBALS['numbers'] as $number) {
         $GLOBALS['squareSum'] += ($number - $GLOBALS['average']) ** 2;
     }
-    $gotVariance = $GLOBALS['squareSum'] / $GLOBALS['array_size'];
-    return $gotVariance;
+    $variance = $GLOBALS['squareSum'] / $GLOBALS['array_size'];
+    return $variance;
 }
 $variance = getVariance();
 echo "分散：". $variance;
