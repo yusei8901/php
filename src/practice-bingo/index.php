@@ -55,7 +55,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $style = ($i === 0) ? 'style="color:red;"' : '';
                     echo "<p class='number-font'><span {$style}>{$number}</span>,</p>";
                     if(($i + 1) % 10 == 0) {
-                        echo "<div class='separate'>ーーーーーーーーーーーーーーーーーーーー</div>";
+                        echo "<div>ーーーーーーーーーーーーーーーーーーーー</div>";
                     }
                 }
             ?>
